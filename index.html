@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Thisaiva — Maximize your venture capital operations seamlessly. Comprehensive online management solution for VC firms, Angels, and Founders.">
+  <title>Thisaiva | Venture Capital & Investment Management Platform</title>
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- NAVIGATION BAR -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="logo">
+        <div class="logo-icon">
+          <i class="fa-solid fa-fire-flame-curved"></i>
+        </div>
+        <div class="logo-text">
+          THISAIVA
+          <span>Ventures</span>
+        </div>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#for-angels">For Angels</a></li>
+        <li><a href="#for-vc">For VC</a></li>
+        <li><a href="#for-founders">For Founders</a></li>
+        <li><a href="#insights">Insights</a></li>
+        <li><a href="#community">Community</a></li>
+        <li><a href="#media">Media</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="#login" class="login-link" id="loginBtn">Login</a>
+        <button class="btn-gold" id="getStartedBtn">
+          Get Started <i class="fa-solid fa-arrow-right"></i>
+        </button>
+        <button class="hamburger" id="hamburgerBtn" aria-label="Toggle Navigation">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="home">
+    <div class="container hero-grid">
+      
+      <!-- Side Tag -->
+      <div class="hero-side-tag">
+        <div class="side-tag-text">FUNDING • GROWTH • IMPACT</div>
+        <div class="side-tag-line"></div>
+      </div>
+
+      <!-- Main Copy -->
+      <div class="hero-content">
+        <span class="section-eyebrow"><i class="fa-solid fa-star"></i> NEXT-GEN VENTURE OPERATIONS</span>
+        <h1 class="hero-title">
+          Strategic Capital.<br>
+          <span class="gold-text">Smarter Growth.</span><br>
+          Lasting Impact.
+        </h1>
+        <p class="hero-description">
+          <strong>Maximize your venture capital operations seamlessly.</strong> Thisaiva empowers you to streamline and manage your venture capital firm effortlessly through an intuitive online platform. Enhance efficiency with our comprehensive digital management solution.
+        </p>
+        <div class="hero-buttons">
+          <button class="btn-gold" onclick="openModal('Founder Access')">
+            For Founders <i class="fa-solid fa-arrow-right"></i>
+          </button>
+          <button class="btn-outline-gold" onclick="openModal('Investor Portal')">
+            For Investors <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Hero Visual Arch -->
+      <div class="hero-visual">
+        <div class="hero-arch-wrapper">
+          <img src="assets/hero_arch_city.jpg" alt="Thisaiva Strategic Capital Archway">
+        </div>
+        <div class="hero-badge">
+          <i class="fa-solid fa-shield-halved hero-badge-icon"></i>
+          <div class="hero-badge-text">TRUSTED BY VISIONARIES WORLDWIDE</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- METRICS / NUMBERS SECTION -->
+  <section class="metrics-section">
+    <div class="container">
+      <div class="metrics-card">
+        
+        <div class="metric-item">
+          <div class="metric-icon"><i class="fa-solid fa-chart-line"></i></div>
+          <div class="metric-number" data-target="0.5">$0.5B+</div>
+          <div class="metric-label">Capital Deployed & Managed</div>
+        </div>
+
+        <div class="metric-item">
+          <div class="metric-icon"><i class="fa-solid fa-users"></i></div>
+          <div class="metric-number" data-target="262">262K+</div>
+          <div class="metric-label">Active Investors & LP Network</div>
+        </div>
+
+        <div class="metric-item">
+          <div class="metric-icon"><i class="fa-solid fa-award"></i></div>
+          <div class="metric-number" data-target="10">10+ Yrs</div>
+          <div class="metric-label">Proven Track Record of Excellence</div>
+        </div>
+
+        <div class="metric-item">
+          <div class="metric-icon"><i class="fa-solid fa-handshake"></i></div>
+          <div class="metric-number" data-target="3000">3000+</div>
+          <div class="metric-label">Global Clients & Portfolio Companies</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT US SECTION -->
+  <section class="about-section" id="about">
+    <div class="container about-grid">
+      
+      <!-- Left Visual Stack -->
+      <div class="about-visual-stack">
+        <div class="about-img-main">
+          <img src="assets/about_executive.jpg" alt="Executive Leadership at Thisaiva">
+        </div>
+
+        <div class="about-card-badge">
+          <h4>Experience Meets Execution</h4>
+          <p>Over a decade empowering high-growth enterprise ventures.</p>
+        </div>
+
+        <button class="about-video-trigger" id="videoModalBtn" title="Play Overview Video">
+          <i class="fa-solid fa-play"></i>
+        </button>
+
+        <div class="about-card-bottom">
+          <div class="author-avatars">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80" alt="Partner">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Managing Director">
+            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=100&q=80" alt="VP Finance">
+          </div>
+          <div>
+            <strong style="display:block; font-size:0.85rem;">Building tomorrow's leaders, today.</strong>
+            <span style="font-size:0.75rem; color:var(--text-dark-muted);">Trusted by 4K+ Syndicate LPs</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Copy -->
+      <div class="about-content">
+        <span class="section-eyebrow">ABOUT US</span>
+        <h2>Building a Smarter Investment Ecosystem</h2>
+        
+        <p>
+          Thisaiva is a sophisticated digital platform designed to facilitate the seamless raising of funds from your network for investment in private enterprises. Offering a comprehensive suite of features, it serves as your all-in-one solution for managing investment projects, from initial structuring to ongoing investor reporting.
+        </p>
+
+        <div style="background: rgba(212,175,55,0.08); border-left: 3px solid var(--gold-primary); padding: 1.25rem; border-radius: 0 12px 12px 0; margin-bottom: 2rem;">
+          <h4 style="font-family: var(--font-sans); font-size:0.9rem; text-transform:uppercase; color: var(--gold-dark); margin-bottom:0.3rem;">Our Mission</h4>
+          <blockquote style="font-family: var(--font-serif); font-size:1.15rem; font-style:italic; color: var(--text-dark); line-height: 1.4;">
+            "Our mission is to expedite private investment and unlock additional capital resources."
+          </blockquote>
+          <p style="font-size:0.85rem; color: var(--text-dark-muted); margin-top:0.5rem; margin-bottom:0;">
+            Our dynamic approach enables us to swiftly respond to and embrace change. Agile enterprises perceive change as a chance for growth rather than a mere challenge.
+          </p>
+        </div>
+
+        <ul class="about-checklist">
+          <li>
+            <div class="check-icon"><i class="fa-solid fa-check"></i></div>
+            Seamless fundraising from global LP networks
+          </li>
+          <li>
+            <div class="check-icon"><i class="fa-solid fa-check"></i></div>
+            Automated capital calls, distributions, and investor reporting
+          </li>
+          <li>
+            <div class="check-icon"><i class="fa-solid fa-check"></i></div>
+            End-to-end framework for efficient capital deployment
+          </li>
+        </ul>
+
+        <button class="btn-dark" onclick="openModal('Learn More About Thisaiva')">
+          Know More About Us <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- INVESTMENT FOCUS (FOR VC & FOR ANGELS) -->
+  <section class="investment-section" id="for-vc">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">OUR INVESTMENT FOCUS</span>
+        <h2>Where Innovation Meets Capital</h2>
+      </div>
+
+      <div class="investment-cards">
+        
+        <!-- For VC -->
+        <div class="invest-card">
+          <div>
+            <div class="invest-card-header">
+              <div class="invest-icon">
+                <i class="fa-solid fa-building-columns"></i>
+              </div>
+              <h3>For VC</h3>
+            </div>
+            <strong style="display:block; font-size:1.1rem; margin-bottom:0.75rem; color:var(--text-dark);">
+              Embark on Your Venture Funding Endeavor with Innovation
+            </strong>
+            <p>
+              Effortlessly initiate your venture capital fund, solicit investments from Limited Partners (LPs), execute capital calls, and undertake pivotal tasks seamlessly through our online platform.
+            </p>
+          </div>
+          <div class="invest-card-footer">
+            <span class="invest-tag">Venture Capital Management</span>
+            <button class="arrow-btn" onclick="openModal('VC Onboarding')" aria-label="Explore VC Services">
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- For Angels -->
+        <div class="invest-card" id="for-angels">
+          <div>
+            <div class="invest-card-header">
+              <div class="invest-icon">
+                <i class="fa-solid fa-user-astronaut"></i>
+              </div>
+              <h3>For Angels</h3>
+            </div>
+            <strong style="display:block; font-size:1.1rem; margin-bottom:0.75rem; color:var(--text-dark);">
+              Enhance Your Investment Endeavors
+            </strong>
+            <p>
+              Enhance your investment endeavors by joining forces with your network.<br>
+              <strong>Syndicate:</strong> A Private Investment Club Facilitating Collaborative Deal Sharing and Co-Investment Opportunities Within Your Network.
+            </p>
+          </div>
+          <div class="invest-card-footer">
+            <span class="invest-tag">Angel Syndicates</span>
+            <button class="arrow-btn" onclick="openModal('Angel Syndicate Setup')" aria-label="Explore Angel Services">
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- MAIN CTA BANNER -->
+  <section class="cta-banner-section">
+    <div class="container">
+      <div class="cta-banner-card">
+        
+        <div class="cta-img-wrapper">
+          <img src="assets/cta_investor_woman.jpg" alt="Smart Capital Future">
+        </div>
+
+        <div class="cta-content">
+          <span class="section-eyebrow">SMART CAPITAL. STRONGER FUTURE.</span>
+          <h2>Grow wealth through smart investment choice</h2>
+          <p>
+            Empowering businesses with innovative strategies and actionable recommendations. Join a network of forward-thinkers driving exponential private investment.
+          </p>
+          <button class="btn-gold" onclick="openModal('Schedule Consultation')">
+            Let's Talk <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- BLOG / INSIGHTS SECTION -->
+  <section class="blog-section" id="insights">
+    <div class="container">
+      
+      <div class="blog-top-bar">
+        <div class="blog-top-left">
+          <span class="section-eyebrow">LATEST INSIGHTS</span>
+          <h2>Ideas. Trends. Opportunities.</h2>
+          <p>Get the latest updates, tips & tricks from our experts.</p>
+        </div>
+        <a href="#insights" class="view-all-link" onclick="openModal('View All 7 Insights')">
+          See All Blogs (7) <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+
+      <div class="blog-grid">
+        
+        <!-- Blog 1 -->
+        <article class="blog-card">
+          <div class="blog-img-box">
+            <img src="assets/blog_spending.jpg" alt="Wise Spending Habits">
+          </div>
+          <div class="blog-body">
+            <div class="blog-meta">
+              <span class="date">May 18, 2026</span>
+              <span>•</span>
+              <span>5 min read</span>
+            </div>
+            <h3>Wise Spending Habits, 13 Tips for Maximizing Your Money</h3>
+            <div class="blog-author">
+              <div class="author-avatar-sm">RK</div>
+              <div class="author-name">Rashed Ka</div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Blog 2 -->
+        <article class="blog-card">
+          <div class="blog-img-box">
+            <img src="assets/blog_leaders.jpg" alt="Lessons from Visionary Leaders">
+          </div>
+          <div class="blog-body">
+            <div class="blog-meta">
+              <span class="date">May 12, 2026</span>
+              <span>•</span>
+              <span>7 min read</span>
+            </div>
+            <h3>Lessons from Visionary Leaders for Success in Business</h3>
+            <div class="blog-author">
+              <div class="author-avatar-sm">MJ</div>
+              <div class="author-name">Mark Joe</div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- GLOBAL PRESENCE SECTION -->
+  <section class="global-section" id="media">
+    <div class="container">
+      
+      <div class="section-header" style="max-width: 720px;">
+        <span class="section-eyebrow"><i class="fa-solid fa-earth-americas"></i> GLOBAL PRESENCE</span>
+        <h2 style="color:#ffffff;">Global Reach. Local Impact.</h2>
+        <p style="color:var(--text-light-muted); margin-top:0.75rem;">
+          Our highly qualified professionals work together as one team in over 35 offices around the world.
+        </p>
+      </div>
+
+      <!-- Map Display Container -->
+      <div class="map-container" id="mapContainer">
+        <!-- SVG Detailed World Map Silhouette -->
+        <svg class="world-map-svg" viewBox="0 0 1000 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- North America -->
+          <path d="M150,90 Q180,70 240,85 T280,130 T220,190 T140,160 Z" fill="rgba(212,175,55,0.06)" stroke="rgba(212,175,55,0.2)" stroke-width="1"/>
+          <!-- South America -->
+          <path d="M250,220 Q290,230 310,290 T270,390 T240,320 Z" fill="rgba(212,175,55,0.06)" stroke="rgba(212,175,55,0.2)" stroke-width="1"/>
+          <!-- Europe -->
+          <path d="M470,80 Q530,70 560,110 T500,160 T460,120 Z" fill="rgba(212,175,55,0.06)" stroke="rgba(212,175,55,0.2)" stroke-width="1"/>
+          <!-- Africa -->
+          <path d="M460,170 Q520,180 540,240 T500,340 T440,260 Z" fill="rgba(212,175,55,0.06)" stroke="rgba(212,175,55,0.2)" stroke-width="1"/>
+          <!-- Asia -->
+          <path d="M570,80 Q720,60 850,110 T820,240 T650,220 Z" fill="rgba(212,175,55,0.06)" stroke="rgba(212,175,55,0.2)" stroke-width="1"/>
+          <!-- Australia -->
+          <path d="M780,280 Q850,270 880,330 T810,380 Z" fill="rgba(212,175,55,0.06)" stroke="rgba(212,175,55,0.2)" stroke-width="1"/>
+
+          <!-- Flight Connections -->
+          <path d="M220,140 Q350,80 490,110" stroke="rgba(212,175,55,0.3)" stroke-width="1.5" stroke-dasharray="4 4"/>
+          <path d="M490,110 Q640,120 780,230" stroke="rgba(212,175,55,0.3)" stroke-width="1.5" stroke-dasharray="4 4"/>
+          <path d="M230,170 Q250,200 270,230" stroke="rgba(212,175,55,0.3)" stroke-width="1.5" stroke-dasharray="4 4"/>
+        </svg>
+
+        <!-- Pulsing Location Markers -->
+        <!-- Massachusetts -->
+        <div class="map-marker" style="top: 28%; left: 23%;" data-city="Massachusetts, USA" data-desc="North America Regional Hub">
+          <div class="marker-pulse"></div>
+          <div class="marker-dot"></div>
+          <div class="marker-label">Massachusetts</div>
+        </div>
+
+        <!-- Tennessee -->
+        <div class="map-marker" style="top: 33%; left: 20%;" data-city="Tennessee, USA" data-desc="Venture Capital Operations">
+          <div class="marker-pulse"></div>
+          <div class="marker-dot"></div>
+          <div class="marker-label">Tennessee</div>
+        </div>
+
+        <!-- Curaçao -->
+        <div class="map-marker" style="top: 45%; left: 26%;" data-city="Curaçao" data-desc="Offshore Fund Structuring & LP Desk">
+          <div class="marker-pulse"></div>
+          <div class="marker-dot"></div>
+          <div class="marker-label">Curaçao</div>
+        </div>
+
+        <!-- Switzerland -->
+        <div class="map-marker" style="top: 25%; left: 51%;" data-city="Switzerland" data-desc="Private Wealth & European Syndicate Hub">
+          <div class="marker-pulse"></div>
+          <div class="marker-dot"></div>
+          <div class="marker-label">Switzerland</div>
+        </div>
+
+        <!-- London -->
+        <div class="map-marker" style="top: 22%; left: 47%;" data-city="London, UK" data-desc="EMEA Headquarters">
+          <div class="marker-pulse"></div>
+          <div class="marker-dot"></div>
+          <div class="marker-label">London</div>
+        </div>
+
+        <!-- Singapore -->
+        <div class="map-marker" style="top: 52%; left: 77%;" data-city="Singapore" data-desc="Asia-Pacific Fund Operations">
+          <div class="marker-pulse"></div>
+          <div class="marker-dot"></div>
+          <div class="marker-label">Singapore</div>
+        </div>
+
+        <!-- Tokyo -->
+        <div class="map-marker" style="top: 32%; left: 84%;" data-city="Tokyo, Japan" data-desc="East Asia Growth Fund Office">
+          <div class="marker-pulse"></div>
+          <div class="marker-dot"></div>
+          <div class="marker-label">Tokyo</div>
+        </div>
+
+        <!-- Interactive Map Popover -->
+        <div class="map-popover" id="mapPopover">
+          <div class="popover-city" id="popoverCity">Massachusetts</div>
+          <div class="popover-desc" id="popoverDesc">North America Regional Hub</div>
+        </div>
+      </div>
+
+      <!-- Static Global Locations Grid -->
+      <div class="locations-grid">
+        
+        <div class="location-card" data-marker="0">
+          <div class="location-card-header">
+            <div class="location-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div>
+              <h4 class="location-title">Massachusetts</h4>
+              <span class="location-country">United States</span>
+            </div>
+          </div>
+          <p class="location-desc">North America Regional Hub & Strategic Tech Investments</p>
+        </div>
+
+        <div class="location-card" data-marker="1">
+          <div class="location-card-header">
+            <div class="location-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div>
+              <h4 class="location-title">Tennessee</h4>
+              <span class="location-country">United States</span>
+            </div>
+          </div>
+          <p class="location-desc">Venture Capital Operations & Founder Acceleration Center</p>
+        </div>
+
+        <div class="location-card" data-marker="2">
+          <div class="location-card-header">
+            <div class="location-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div>
+              <h4 class="location-title">Curaçao</h4>
+              <span class="location-country">Caribbean</span>
+            </div>
+          </div>
+          <p class="location-desc">International Offshore Structuring & LP Investor Relations</p>
+        </div>
+
+        <div class="location-card" data-marker="3">
+          <div class="location-card-header">
+            <div class="location-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div>
+              <h4 class="location-title">Switzerland</h4>
+              <span class="location-country">Europe</span>
+            </div>
+          </div>
+          <p class="location-desc">Private Wealth & European Syndicate Management Center</p>
+        </div>
+
+        <div class="location-card" data-marker="4">
+          <div class="location-card-header">
+            <div class="location-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div>
+              <h4 class="location-title">London</h4>
+              <span class="location-country">United Kingdom</span>
+            </div>
+          </div>
+          <p class="location-desc">EMEA Headquarters & Institutional Partner Desk</p>
+        </div>
+
+        <div class="location-card" data-marker="5">
+          <div class="location-card-header">
+            <div class="location-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div>
+              <h4 class="location-title">Singapore</h4>
+              <span class="location-country">Asia-Pacific</span>
+            </div>
+          </div>
+          <p class="location-desc">Asia-Pacific Fund Operations & Enterprise Ventures</p>
+        </div>
+
+        <div class="location-card" data-marker="6">
+          <div class="location-card-header">
+            <div class="location-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div>
+              <h4 class="location-title">Tokyo</h4>
+              <span class="location-country">Japan</span>
+            </div>
+          </div>
+          <p class="location-desc">East Asia Growth Fund & Deep-Tech Advisory</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- NEWSLETTER SECTION -->
+  <section class="newsletter-section">
+    <div class="container">
+      <div class="newsletter-box">
+        <div class="newsletter-text">
+          <span class="section-eyebrow">OUR NEWSLETTER</span>
+          <h3>Instant news by subscribe to our daily newsletter</h3>
+          <p>Stay updated with strategic market insights and venture opportunities.</p>
+        </div>
+
+        <form class="newsletter-form" id="newsletterForm">
+          <input type="email" class="newsletter-input" placeholder="Enter your email address..." required>
+          <button type="submit" class="btn-gold">
+            Subscribe <i class="fa-solid fa-paper-plane"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer" id="contact">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <!-- Brand Col -->
+        <div class="footer-brand">
+          <div class="logo" style="margin-bottom: 0.5rem;">
+            <div class="logo-icon"><i class="fa-solid fa-fire-flame-curved"></i></div>
+            <div class="logo-text">THISAIVA<span>Ventures</span></div>
+          </div>
+          <p>
+            Your Gateway to Exponential Private Investment.<br>
+            <strong>Unlock Capital, Accelerate Growth.</strong>
+          </p>
+        </div>
+
+        <!-- Links -->
+        <div class="footer-col">
+          <h4>Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#for-vc">Our Investors</a></li>
+            <li><a href="#community">Community</a></li>
+            <li><a href="#insights">News & Updates</a></li>
+          </ul>
+        </div>
+
+        <!-- Company -->
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#for-angels">For Angels</a></li>
+            <li><a href="#for-vc">For VC</a></li>
+            <li><a href="#for-founders">For Founders</a></li>
+            <li><a href="#about">Careers</a></li>
+            <li><a href="#contact">Press</a></li>
+          </ul>
+        </div>
+
+        <!-- Support -->
+        <div class="footer-col">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="#contact">Terms of Use</a></li>
+            <li><a href="#contact">Terms & Condition</a></li>
+            <li><a href="#contact">Privacy Policy</a></li>
+            <li><a href="#contact">Help Center</a></li>
+          </ul>
+        </div>
+
+        <!-- Social -->
+        <div class="footer-col">
+          <h4>Follow Us</h4>
+          <div class="social-links">
+            <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" class="social-icon" aria-label="X / Twitter">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="social-icon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 Thisaiva Ventures Inc. All Rights Reserved.</div>
+        <div style="display:flex; gap:1.5rem;">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Preferences</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- GENERAL CONTACT / ONBOARDING MODAL -->
+  <div class="modal-overlay" id="contactModal">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeModal('contactModal')"><i class="fa-solid fa-xmark"></i></button>
+      <h3 class="modal-title" id="modalTitle">Get Started with Thisaiva</h3>
+      <p class="modal-sub">Tell us about your venture goals and our team will get in touch with you shortly.</p>
+
+      <form id="contactForm">
+        <div class="form-group">
+          <label>Full Name</label>
+          <input type="text" class="form-control" placeholder="e.g. Sarah Jenkins" required>
+        </div>
+        <div class="form-group">
+          <label>Work Email</label>
+          <input type="email" class="form-control" placeholder="sarah@firm.com" required>
+        </div>
+        <div class="form-group">
+          <label>I am a...</label>
+          <select class="form-control" required>
+            <option value="vc">Venture Capital Partner / LP</option>
+            <option value="angel">Angel Investor / Syndicate Leader</option>
+            <option value="founder">Startup Founder</option>
+            <option value="other">Other Investor</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Message / Details</label>
+          <textarea class="form-control" rows="3" placeholder="How can we assist your venture operations?"></textarea>
+        </div>
+        <button type="submit" class="btn-gold" style="width: 100%; justify-content: center; margin-top: 1rem;">
+          Submit Inquiry <i class="fa-solid fa-paper-plane"></i>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- VIDEO POPUP MODAL -->
+  <div class="modal-overlay" id="videoModal">
+    <div class="modal-box" style="max-width: 800px; padding: 1.5rem;">
+      <button class="modal-close" onclick="closeModal('videoModal')"><i class="fa-solid fa-xmark"></i></button>
+      <h4 style="color:var(--gold-primary); margin-bottom:1rem; font-family:var(--font-serif); font-size:1.5rem;">Thisaiva Platform Showcase</h4>
+      <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px; background: #000;">
+        <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=0" allowfullscreen title="Thisaiva Overview"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION -->
+  <div class="toast-notification" id="toastNotification">
+    <i class="fa-solid fa-circle-check" style="color: var(--gold-primary); font-size: 1.25rem;"></i>
+    <span id="toastMessage">Your request has been received successfully!</span>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
