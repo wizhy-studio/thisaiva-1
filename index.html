@@ -144,10 +144,6 @@
           <p>Over a decade empowering high-growth enterprise ventures.</p>
         </div>
 
-        <button class="about-video-trigger" id="videoModalBtn" title="Play Overview Video">
-          <i class="fa-solid fa-play"></i>
-        </button>
-
         <div class="about-card-bottom">
           <div class="author-avatars">
             <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80" alt="Partner">
@@ -354,92 +350,12 @@
   <section class="global-section" id="media">
     <div class="container">
       
-      <div class="section-header" style="max-width: 720px;">
+      <div class="section-header" style="max-width: 720px; margin-bottom: 3.5rem;">
         <span class="section-eyebrow"><i class="fa-solid fa-earth-americas"></i> GLOBAL PRESENCE</span>
         <h2 style="color:#ffffff;">Global Reach. Local Impact.</h2>
         <p style="color:var(--text-light-muted); margin-top:0.75rem;">
           Our highly qualified professionals work together as one team in over 35 offices around the world.
         </p>
-      </div>
-
-      <!-- Map Display Container -->
-      <div class="map-container" id="mapContainer">
-        <!-- SVG Detailed World Map Silhouette -->
-        <svg class="world-map-svg" viewBox="0 0 1000 500" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <!-- North America -->
-          <path d="M150,90 Q180,70 240,85 T280,130 T220,190 T140,160 Z" fill="rgba(212,175,55,0.06)" stroke="rgba(212,175,55,0.2)" stroke-width="1"/>
-          <!-- South America -->
-          <path d="M250,220 Q290,230 310,290 T270,390 T240,320 Z" fill="rgba(212,175,55,0.06)" stroke="rgba(212,175,55,0.2)" stroke-width="1"/>
-          <!-- Europe -->
-          <path d="M470,80 Q530,70 560,110 T500,160 T460,120 Z" fill="rgba(212,175,55,0.06)" stroke="rgba(212,175,55,0.2)" stroke-width="1"/>
-          <!-- Africa -->
-          <path d="M460,170 Q520,180 540,240 T500,340 T440,260 Z" fill="rgba(212,175,55,0.06)" stroke="rgba(212,175,55,0.2)" stroke-width="1"/>
-          <!-- Asia -->
-          <path d="M570,80 Q720,60 850,110 T820,240 T650,220 Z" fill="rgba(212,175,55,0.06)" stroke="rgba(212,175,55,0.2)" stroke-width="1"/>
-          <!-- Australia -->
-          <path d="M780,280 Q850,270 880,330 T810,380 Z" fill="rgba(212,175,55,0.06)" stroke="rgba(212,175,55,0.2)" stroke-width="1"/>
-
-          <!-- Flight Connections -->
-          <path d="M220,140 Q350,80 490,110" stroke="rgba(212,175,55,0.3)" stroke-width="1.5" stroke-dasharray="4 4"/>
-          <path d="M490,110 Q640,120 780,230" stroke="rgba(212,175,55,0.3)" stroke-width="1.5" stroke-dasharray="4 4"/>
-          <path d="M230,170 Q250,200 270,230" stroke="rgba(212,175,55,0.3)" stroke-width="1.5" stroke-dasharray="4 4"/>
-        </svg>
-
-        <!-- Pulsing Location Markers -->
-        <!-- Massachusetts -->
-        <div class="map-marker" style="top: 28%; left: 23%;" data-city="Massachusetts, USA" data-desc="North America Regional Hub">
-          <div class="marker-pulse"></div>
-          <div class="marker-dot"></div>
-          <div class="marker-label">Massachusetts</div>
-        </div>
-
-        <!-- Tennessee -->
-        <div class="map-marker" style="top: 33%; left: 20%;" data-city="Tennessee, USA" data-desc="Venture Capital Operations">
-          <div class="marker-pulse"></div>
-          <div class="marker-dot"></div>
-          <div class="marker-label">Tennessee</div>
-        </div>
-
-        <!-- Curaçao -->
-        <div class="map-marker" style="top: 45%; left: 26%;" data-city="Curaçao" data-desc="Offshore Fund Structuring & LP Desk">
-          <div class="marker-pulse"></div>
-          <div class="marker-dot"></div>
-          <div class="marker-label">Curaçao</div>
-        </div>
-
-        <!-- Switzerland -->
-        <div class="map-marker" style="top: 25%; left: 51%;" data-city="Switzerland" data-desc="Private Wealth & European Syndicate Hub">
-          <div class="marker-pulse"></div>
-          <div class="marker-dot"></div>
-          <div class="marker-label">Switzerland</div>
-        </div>
-
-        <!-- London -->
-        <div class="map-marker" style="top: 22%; left: 47%;" data-city="London, UK" data-desc="EMEA Headquarters">
-          <div class="marker-pulse"></div>
-          <div class="marker-dot"></div>
-          <div class="marker-label">London</div>
-        </div>
-
-        <!-- Singapore -->
-        <div class="map-marker" style="top: 52%; left: 77%;" data-city="Singapore" data-desc="Asia-Pacific Fund Operations">
-          <div class="marker-pulse"></div>
-          <div class="marker-dot"></div>
-          <div class="marker-label">Singapore</div>
-        </div>
-
-        <!-- Tokyo -->
-        <div class="map-marker" style="top: 32%; left: 84%;" data-city="Tokyo, Japan" data-desc="East Asia Growth Fund Office">
-          <div class="marker-pulse"></div>
-          <div class="marker-dot"></div>
-          <div class="marker-label">Tokyo</div>
-        </div>
-
-        <!-- Interactive Map Popover -->
-        <div class="map-popover" id="mapPopover">
-          <div class="popover-city" id="popoverCity">Massachusetts</div>
-          <div class="popover-desc" id="popoverDesc">North America Regional Hub</div>
-        </div>
       </div>
 
       <!-- Static Global Locations Grid -->
@@ -658,17 +574,6 @@
           Submit Inquiry <i class="fa-solid fa-paper-plane"></i>
         </button>
       </form>
-    </div>
-  </div>
-
-  <!-- VIDEO POPUP MODAL -->
-  <div class="modal-overlay" id="videoModal">
-    <div class="modal-box" style="max-width: 800px; padding: 1.5rem;">
-      <button class="modal-close" onclick="closeModal('videoModal')"><i class="fa-solid fa-xmark"></i></button>
-      <h4 style="color:var(--gold-primary); margin-bottom:1rem; font-family:var(--font-serif); font-size:1.5rem;">Thisaiva Platform Showcase</h4>
-      <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px; background: #000;">
-        <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=0" allowfullscreen title="Thisaiva Overview"></iframe>
-      </div>
     </div>
   </div>
 

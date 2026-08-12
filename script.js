@@ -129,60 +129,16 @@ function initStatCounters() {
 }
 
 /* --------------------------------------------------------------------------
-   4. INTERACTIVE GLOBAL MAP MARKERS
+   4. LOCATION CARDS INTERACTIVITY
    -------------------------------------------------------------------------- */
 function initGlobalMap() {
-  const markers = document.querySelectorAll('.map-marker');
   const cards = document.querySelectorAll('.location-card');
-  const popover = document.getElementById('mapPopover');
-  const popoverCity = document.getElementById('popoverCity');
-  const popoverDesc = document.getElementById('popoverDesc');
 
-  function activateMarker(index) {
-    markers.forEach(m => m.classList.remove('active'));
-    cards.forEach(c => c.classList.remove('active'));
-
-    if (markers[index]) {
-      const marker = markers[index];
-      marker.classList.add('active');
-      
-      const city = marker.getAttribute('data-city');
-      const desc = marker.getAttribute('data-desc');
-
-      if (popoverCity) popoverCity.textContent = city;
-      if (popoverDesc) popoverDesc.textContent = desc;
-      if (popover) popover.classList.add('active');
-    }
-
-    if (cards[index]) {
-      cards[index].classList.add('active');
-    }
-  }
-
-  markers.forEach((marker, index) => {
-    marker.addEventListener('click', (e) => {
-      e.stopPropagation();
-      activateMarker(index);
-    });
-  });
-
-  cards.forEach((card, index) => {
-    card.addEventListener('click', (e) => {
-      e.stopPropagation();
-      activateMarker(index);
-      const mapContainer = document.getElementById('mapContainer');
-      if (mapContainer) {
-        mapContainer.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-      }
-    });
-  });
-
-  document.addEventListener('click', (e) => {
-    if (!e.target.closest('#mapContainer') && !e.target.closest('.locations-grid')) {
-      markers.forEach(m => m.classList.remove('active'));
+  cards.forEach(card => {
+    card.addEventListener('click', () => {
       cards.forEach(c => c.classList.remove('active'));
-      if (popover) popover.classList.remove('active');
-    }
+      card.classList.add('active');
+    });
   });
 }
 
@@ -206,11 +162,6 @@ function closeModal(modalId) {
     modal.classList.remove('active');
   }
 }
-
-// Video modal trigger
-document.getElementById('videoModalBtn')?.addEventListener('click', () => {
-  document.getElementById('videoModal')?.classList.add('active');
-});
 
 // Button triggers
 document.getElementById('getStartedBtn')?.addEventListener('click', () => {
