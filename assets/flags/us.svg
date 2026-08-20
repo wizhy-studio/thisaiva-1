@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <clipPath id="a"><circle cx="256" cy="256" r="256"/></clipPath>
+  <g clip-path="url(#a)">
+    <path fill="#bd3d44" d="M0 0h512v512H0z"/>
+    <path stroke="#fff" stroke-width="39.38" d="M0 59.08h512m0 78.77H0m0 78.77h512m0 78.77H0m0 78.77h512m0 78.77H0"/>
+    <path fill="#192f5d" d="M0 0h256v275.69H0z"/>
+    <g fill="#fff">
+      <circle cx="32" cy="27" r="9"/><circle cx="85" cy="27" r="9"/><circle cx="138" cy="27" r="9"/><circle cx="191" cy="27" r="9"/>
+      <circle cx="58" cy="55" r="9"/><circle cx="111" cy="55" r="9"/><circle cx="164" cy="55" r="9"/><circle cx="217" cy="55" r="9"/>
+      <circle cx="32" cy="83" r="9"/><circle cx="85" cy="83" r="9"/><circle cx="138" cy="83" r="9"/><circle cx="191" cy="83" r="9"/>
+      <circle cx="58" cy="111" r="9"/><circle cx="111" cy="111" r="9"/><circle cx="164" cy="111" r="9"/><circle cx="217" cy="111" r="9"/>
+      <circle cx="32" cy="139" r="9"/><circle cx="85" cy="139" r="9"/><circle cx="138" cy="139" r="9"/><circle cx="191" cy="139" r="9"/>
+      <circle cx="58" cy="167" r="9"/><circle cx="111" cy="167" r="9"/><circle cx="164" cy="167" r="9"/><circle cx="217" cy="167" r="9"/>
+      <circle cx="32" cy="195" r="9"/><circle cx="85" cy="195" r="9"/><circle cx="138" cy="195" r="9"/><circle cx="191" cy="195" r="9"/>
+      <circle cx="58" cy="223" r="9"/><circle cx="111" cy="223" r="9"/><circle cx="164" cy="223" r="9"/><circle cx="217" cy="223" r="9"/>
+      <circle cx="32" cy="251" r="9"/><circle cx="85" cy="251" r="9"/><circle cx="138" cy="251" r="9"/><circle cx="191" cy="251" r="9"/>
+    </g>
+  </g>
+</svg>

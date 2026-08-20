@@ -1,0 +1,5 @@
+# Ignore validation and temporary artifact directories
+can be deleted/
+node_modules/
+*.log
+.DS_Store

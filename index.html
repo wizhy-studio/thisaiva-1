@@ -17,33 +17,56 @@
   <!-- NAVIGATION BAR -->
   <nav class="navbar" id="navbar">
     <div class="container nav-container">
-      <a href="#home" class="logo">
-        <div class="logo-icon">
-          <i class="fa-solid fa-fire-flame-curved"></i>
-        </div>
-        <div class="logo-text">
-          THISAIVA
-          <span>Ventures</span>
-        </div>
+      <a href="index.html" class="logo" aria-label="Thisaiva Home">
+        <img src="assets/logo_dark.png" alt="Thisaiva Logo" class="logo-img">
       </a>
 
       <ul class="nav-links" id="navLinks">
-        <li><a href="#home" class="active">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#for-angels">For Angels</a></li>
-        <li><a href="#for-vc">For VC</a></li>
-        <li><a href="#for-founders">For Founders</a></li>
-        <li><a href="#insights">Insights</a></li>
-        <li><a href="#community">Community</a></li>
-        <li><a href="#media">Media</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="about.html">About</a></li>
+        <li class="nav-dropdown">
+          <a href="for-vc.html" class="dropdown-trigger">
+            Vehicles <i class="fa-solid fa-chevron-down nav-chevron"></i>
+          </a>
+          <div class="dropdown-menu">
+            <a href="for-angels.html" class="dropdown-item">
+              <div class="drop-icon"><i class="fa-solid fa-user-astronaut"></i></div>
+              <div>
+                <strong class="drop-title">For Angels</strong>
+                <span class="drop-sub">Syndicates & Private Clubs</span>
+              </div>
+            </a>
+            <a href="for-vc.html" class="dropdown-item">
+              <div class="drop-icon"><i class="fa-solid fa-building-columns"></i></div>
+              <div>
+                <strong class="drop-title">For VC Funds</strong>
+                <span class="drop-sub">Master LLC & Offshore Vehicles</span>
+              </div>
+            </a>
+            <a href="for-founders.html" class="dropdown-item">
+              <div class="drop-icon"><i class="fa-solid fa-rocket"></i></div>
+              <div>
+                <strong class="drop-title">For Founders</strong>
+                <span class="drop-sub">Cap Table & Investor Rollups</span>
+              </div>
+            </a>
+            <a href="migrate.html" class="dropdown-item">
+              <div class="drop-icon"><i class="fa-solid fa-arrow-right-arrow-left"></i></div>
+              <div>
+                <strong class="drop-title">Migrate SPVs</strong>
+                <span class="drop-sub">Seamless Entity Transition</span>
+              </div>
+            </a>
+          </div>
+        </li>
+        <li><a href="community.html">Community</a></li>
+        <li><a href="media.html">Media</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
 
       <div class="nav-actions">
-        <a href="#login" class="login-link" id="loginBtn">Login</a>
-        <button class="btn-gold" id="getStartedBtn">
+        <a href="contact.html" class="btn-gold" id="getStartedBtn">
           Get Started <i class="fa-solid fa-arrow-right"></i>
-        </button>
+        </a>
         <button class="hamburger" id="hamburgerBtn" aria-label="Toggle Navigation">
           <i class="fa-solid fa-bars"></i>
         </button>
@@ -73,12 +96,12 @@
           <strong>Maximize your venture capital operations seamlessly.</strong> Thisaiva empowers you to streamline and manage your venture capital firm effortlessly through an intuitive online platform. Enhance efficiency with our comprehensive digital management solution.
         </p>
         <div class="hero-buttons">
-          <button class="btn-gold" onclick="openModal('Founder Access')">
+          <a href="for-founders.html" class="btn-gold">
             For Founders <i class="fa-solid fa-arrow-right"></i>
-          </button>
-          <button class="btn-outline-gold" onclick="openModal('Investor Portal')">
+          </a>
+          <a href="for-vc.html" class="btn-outline-gold">
             For Investors <i class="fa-solid fa-arrow-right"></i>
-          </button>
+          </a>
         </div>
       </div>
 
@@ -97,34 +120,44 @@
   </section>
 
   <!-- METRICS / NUMBERS SECTION -->
-  <section class="metrics-section">
+  <section class="metrics-section" id="metrics">
     <div class="container">
-      <div class="metrics-card">
-        
-        <div class="metric-item">
-          <div class="metric-icon"><i class="fa-solid fa-chart-line"></i></div>
-          <div class="metric-number" data-target="0.5">$0.5B+</div>
-          <div class="metric-label">Capital Deployed & Managed</div>
-        </div>
+      <div class="border-beam-container scroll-reveal">
+        <div class="border-beam-inner metrics-card">
+          
+          <div class="metric-item">
+            <div class="metric-top-row">
+              <div class="metric-icon"><i class="fa-solid fa-chart-line"></i></div>
+              <div class="metric-number" data-target="0.5">$0.5B+</div>
+            </div>
+            <div class="metric-label">Capital Deployed & Managed</div>
+          </div>
 
-        <div class="metric-item">
-          <div class="metric-icon"><i class="fa-solid fa-users"></i></div>
-          <div class="metric-number" data-target="262">262K+</div>
-          <div class="metric-label">Active Investors & LP Network</div>
-        </div>
+          <div class="metric-item">
+            <div class="metric-top-row">
+              <div class="metric-icon"><i class="fa-solid fa-users"></i></div>
+              <div class="metric-number" data-target="262">262K+</div>
+            </div>
+            <div class="metric-label">Active Investors & LP Network</div>
+          </div>
 
-        <div class="metric-item">
-          <div class="metric-icon"><i class="fa-solid fa-award"></i></div>
-          <div class="metric-number" data-target="10">10+ Yrs</div>
-          <div class="metric-label">Proven Track Record of Excellence</div>
-        </div>
+          <div class="metric-item">
+            <div class="metric-top-row">
+              <div class="metric-icon"><i class="fa-solid fa-award"></i></div>
+              <div class="metric-number" data-target="10">10+ Yrs</div>
+            </div>
+            <div class="metric-label">Proven Track Record of Excellence</div>
+          </div>
 
-        <div class="metric-item">
-          <div class="metric-icon"><i class="fa-solid fa-handshake"></i></div>
-          <div class="metric-number" data-target="3000">3000+</div>
-          <div class="metric-label">Global Clients & Portfolio Companies</div>
-        </div>
+          <div class="metric-item">
+            <div class="metric-top-row">
+              <div class="metric-icon"><i class="fa-solid fa-handshake"></i></div>
+              <div class="metric-number" data-target="3000">3000+</div>
+            </div>
+            <div class="metric-label">Global Clients & Portfolio Companies</div>
+          </div>
 
+        </div>
       </div>
     </div>
   </section>
@@ -191,9 +224,9 @@
           </li>
         </ul>
 
-        <button class="btn-dark" onclick="openModal('Learn More About Thisaiva')">
+        <a href="about.html" class="btn-dark">
           Know More About Us <i class="fa-solid fa-arrow-right"></i>
-        </button>
+        </a>
       </div>
 
     </div>
@@ -227,9 +260,9 @@
           </div>
           <div class="invest-card-footer">
             <span class="invest-tag">Venture Capital Management</span>
-            <button class="arrow-btn" onclick="openModal('VC Onboarding')" aria-label="Explore VC Services">
+            <a href="for-vc.html" class="arrow-btn" aria-label="Explore VC Services">
               <i class="fa-solid fa-arrow-right"></i>
-            </button>
+            </a>
           </div>
         </div>
 
@@ -252,9 +285,9 @@
           </div>
           <div class="invest-card-footer">
             <span class="invest-tag">Angel Syndicates</span>
-            <button class="arrow-btn" onclick="openModal('Angel Syndicate Setup')" aria-label="Explore Angel Services">
+            <a href="for-angels.html" class="arrow-btn" aria-label="Explore Angel Services">
               <i class="fa-solid fa-arrow-right"></i>
-            </button>
+            </a>
           </div>
         </div>
 
@@ -265,21 +298,21 @@
   <!-- MAIN CTA BANNER -->
   <section class="cta-banner-section">
     <div class="container">
-      <div class="cta-banner-card">
+      <div class="cta-banner-card scroll-reveal">
         
         <div class="cta-img-wrapper">
-          <img src="assets/cta_investor_woman.jpg" alt="Smart Capital Future">
+          <img src="assets/cta_investor_woman.jpg" alt="Thisaiva Strategic Private Investment">
         </div>
 
         <div class="cta-content">
-          <span class="section-eyebrow">SMART CAPITAL. STRONGER FUTURE.</span>
-          <h2>Grow wealth through smart investment choice</h2>
+          <span class="section-eyebrow">SMART CAPITAL</span>
+          <h2>Grow Wealth Through Smart Investment Choice</h2>
           <p>
-            Empowering businesses with innovative strategies and actionable recommendations. Join a network of forward-thinkers driving exponential private investment.
+            Empowering fund managers, syndicate leads, and founders with institutional venture infrastructure.
           </p>
-          <button class="btn-gold" onclick="openModal('Schedule Consultation')">
+          <a href="contact.html" class="btn-gold">
             Let's Talk <i class="fa-solid fa-arrow-right"></i>
-          </button>
+          </a>
         </div>
 
       </div>
@@ -296,7 +329,7 @@
           <h2>Ideas. Trends. Opportunities.</h2>
           <p>Get the latest updates, tips & tricks from our experts.</p>
         </div>
-        <a href="#insights" class="view-all-link" onclick="openModal('View All 7 Insights')">
+        <a href="media.html" class="view-all-link">
           See All Blogs (7) <i class="fa-solid fa-arrow-right"></i>
         </a>
       </div>
@@ -363,7 +396,7 @@
         
         <div class="location-card" data-marker="0">
           <div class="location-card-header">
-            <div class="location-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div class="country-flag-icon"><img src="assets/flags/us.svg" alt="United States Flag" width="36" height="36"></div>
             <div>
               <h4 class="location-title">Massachusetts</h4>
               <span class="location-country">United States</span>
@@ -374,7 +407,7 @@
 
         <div class="location-card" data-marker="1">
           <div class="location-card-header">
-            <div class="location-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div class="country-flag-icon"><img src="assets/flags/us.svg" alt="United States Flag" width="36" height="36"></div>
             <div>
               <h4 class="location-title">Tennessee</h4>
               <span class="location-country">United States</span>
@@ -385,7 +418,7 @@
 
         <div class="location-card" data-marker="2">
           <div class="location-card-header">
-            <div class="location-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div class="country-flag-icon"><img src="assets/flags/cw.svg" alt="Curaçao Flag" width="36" height="36"></div>
             <div>
               <h4 class="location-title">Curaçao</h4>
               <span class="location-country">Caribbean</span>
@@ -396,7 +429,7 @@
 
         <div class="location-card" data-marker="3">
           <div class="location-card-header">
-            <div class="location-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div class="country-flag-icon"><img src="assets/flags/ch.svg" alt="Switzerland Flag" width="36" height="36"></div>
             <div>
               <h4 class="location-title">Switzerland</h4>
               <span class="location-country">Europe</span>
@@ -407,7 +440,7 @@
 
         <div class="location-card" data-marker="4">
           <div class="location-card-header">
-            <div class="location-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div class="country-flag-icon"><img src="assets/flags/gb.svg" alt="United Kingdom Flag" width="36" height="36"></div>
             <div>
               <h4 class="location-title">London</h4>
               <span class="location-country">United Kingdom</span>
@@ -418,7 +451,7 @@
 
         <div class="location-card" data-marker="5">
           <div class="location-card-header">
-            <div class="location-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div class="country-flag-icon"><img src="assets/flags/sg.svg" alt="Singapore Flag" width="36" height="36"></div>
             <div>
               <h4 class="location-title">Singapore</h4>
               <span class="location-country">Asia-Pacific</span>
@@ -429,7 +462,7 @@
 
         <div class="location-card" data-marker="6">
           <div class="location-card-header">
-            <div class="location-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div class="country-flag-icon"><img src="assets/flags/jp.svg" alt="Japan Flag" width="36" height="36"></div>
             <div>
               <h4 class="location-title">Tokyo</h4>
               <span class="location-country">Japan</span>
@@ -443,21 +476,24 @@
     </div>
   </section>
 
-  <!-- NEWSLETTER SECTION -->
+  <!-- NEWSLETTER / SUBSCRIBE SECTION -->
   <section class="newsletter-section">
     <div class="container">
-      <div class="newsletter-box">
+      <div class="newsletter-box scroll-reveal">
         <div class="newsletter-text">
-          <span class="section-eyebrow">OUR NEWSLETTER</span>
-          <h3>Instant news by subscribe to our daily newsletter</h3>
-          <p>Stay updated with strategic market insights and venture opportunities.</p>
+          <span class="section-eyebrow"><i class="fa-solid fa-bolt"></i> STAY INFORMED</span>
+          <h3>Subscribe to Global Venture Intel</h3>
+          <p>Get exclusive monthly insights on cross-border SPVs, LP structuring, and deal flow directly to your inbox.</p>
         </div>
 
         <form class="newsletter-form" id="newsletterForm">
-          <input type="email" class="newsletter-input" placeholder="Enter your email address..." required>
-          <button type="submit" class="btn-gold">
-            Subscribe <i class="fa-solid fa-paper-plane"></i>
-          </button>
+          <div class="lead-magnet__input-group">
+            <svg class="lead-magnet__input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 6l10 7 10-7"/></svg>
+            <input type="email" id="newsletterEmail" placeholder="Enter your institutional work email..." required autocomplete="email">
+            <button type="submit" class="btn-gold-shimmer" id="newsletterSubscribeBtn">
+              <span>Subscribe</span> <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
         </form>
       </div>
     </div>
@@ -470,9 +506,8 @@
         
         <!-- Brand Col -->
         <div class="footer-brand">
-          <div class="logo" style="margin-bottom: 0.5rem;">
-            <div class="logo-icon"><i class="fa-solid fa-fire-flame-curved"></i></div>
-            <div class="logo-text">THISAIVA<span>Ventures</span></div>
+          <div class="logo" style="margin-bottom: 1rem;">
+            <img src="assets/logo_dark.png" alt="Thisaiva Logo" class="logo-img footer-logo-img">
           </div>
           <p>
             Your Gateway to Exponential Private Investment.<br>
@@ -484,11 +519,11 @@
         <div class="footer-col">
           <h4>Links</h4>
           <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#for-vc">Our Investors</a></li>
-            <li><a href="#community">Community</a></li>
-            <li><a href="#insights">News & Updates</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="for-vc.html">For VC</a></li>
+            <li><a href="community.html">Community</a></li>
+            <li><a href="media.html">Media</a></li>
           </ul>
         </div>
 
@@ -496,11 +531,11 @@
         <div class="footer-col">
           <h4>Company</h4>
           <ul>
-            <li><a href="#for-angels">For Angels</a></li>
-            <li><a href="#for-vc">For VC</a></li>
-            <li><a href="#for-founders">For Founders</a></li>
-            <li><a href="#about">Careers</a></li>
-            <li><a href="#contact">Press</a></li>
+            <li><a href="for-angels.html">For Angels</a></li>
+            <li><a href="for-vc.html">For VC</a></li>
+            <li><a href="for-founders.html">For Founders</a></li>
+            <li><a href="migrate.html">Migrate</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
 
@@ -508,10 +543,10 @@
         <div class="footer-col">
           <h4>Support</h4>
           <ul>
-            <li><a href="#contact">Terms of Use</a></li>
-            <li><a href="#contact">Terms & Condition</a></li>
-            <li><a href="#contact">Privacy Policy</a></li>
-            <li><a href="#contact">Help Center</a></li>
+            <li><a href="contact.html">Terms of Use</a></li>
+            <li><a href="contact.html">Terms & Conditions</a></li>
+            <li><a href="contact.html">Privacy Policy</a></li>
+            <li><a href="contact.html">Help Center</a></li>
           </ul>
         </div>
 
@@ -533,54 +568,18 @@
       <div class="footer-bottom">
         <div>© 2026 Thisaiva Ventures Inc. All Rights Reserved.</div>
         <div style="display:flex; gap:1.5rem;">
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms of Service</a>
-          <a href="#">Cookie Preferences</a>
+          <a href="contact.html">Privacy Policy</a>
+          <a href="contact.html">Terms of Service</a>
+          <a href="contact.html">Cookie Preferences</a>
         </div>
       </div>
     </div>
   </footer>
 
-  <!-- GENERAL CONTACT / ONBOARDING MODAL -->
-  <div class="modal-overlay" id="contactModal">
-    <div class="modal-box">
-      <button class="modal-close" onclick="closeModal('contactModal')"><i class="fa-solid fa-xmark"></i></button>
-      <h3 class="modal-title" id="modalTitle">Get Started with Thisaiva</h3>
-      <p class="modal-sub">Tell us about your venture goals and our team will get in touch with you shortly.</p>
-
-      <form id="contactForm">
-        <div class="form-group">
-          <label>Full Name</label>
-          <input type="text" class="form-control" placeholder="e.g. Sarah Jenkins" required>
-        </div>
-        <div class="form-group">
-          <label>Work Email</label>
-          <input type="email" class="form-control" placeholder="sarah@firm.com" required>
-        </div>
-        <div class="form-group">
-          <label>I am a...</label>
-          <select class="form-control" required>
-            <option value="vc">Venture Capital Partner / LP</option>
-            <option value="angel">Angel Investor / Syndicate Leader</option>
-            <option value="founder">Startup Founder</option>
-            <option value="other">Other Investor</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label>Message / Details</label>
-          <textarea class="form-control" rows="3" placeholder="How can we assist your venture operations?"></textarea>
-        </div>
-        <button type="submit" class="btn-gold" style="width: 100%; justify-content: center; margin-top: 1rem;">
-          Submit Inquiry <i class="fa-solid fa-paper-plane"></i>
-        </button>
-      </form>
-    </div>
-  </div>
-
   <!-- TOAST NOTIFICATION -->
   <div class="toast-notification" id="toastNotification">
     <i class="fa-solid fa-circle-check" style="color: var(--gold-primary); font-size: 1.25rem;"></i>
-    <span id="toastMessage">Your request has been received successfully!</span>
+    <span id="toastMessage">Subscribed successfully!</span>
   </div>
 
   <!-- JavaScript -->
